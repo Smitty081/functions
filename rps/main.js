@@ -3,19 +3,21 @@ function getUserChoice(userInput) {
     userInput = userInput.toLowerCase();
     if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
         return userInput;
-    } 
+    }else {
+        console.log('You must enter "rock", "paper", or "scissors"');
+    }
 }
 
 function getComputerChoice() {
-    let choice = Math.floor(Math.random() * 3);  // Randomly choose 0, 1, or 2
+    let choice = Math.floor(Math.random() * 3);
     if (choice === 0) {
-        return "The computer chose rock";
+        return "rock";
     } else if (choice === 1) {
-        return "The computer chose paper";
+        return "paper";
     } else {
-        return "The computer chose scissors";
+        return "scissors";
     }
-}
+};
 
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
@@ -29,9 +31,10 @@ function determineWinner(userChoice, computerChoice) {
 }
 
 function playGame () {
-    let userChoice = getUserChoice("rock", "paper", "scissors");
-    let computerChoice = getComputerChoice();
-    console.log(userChoice, computerChoice);
+    var userChoice = getUserChoice("scissors");
+    var computerChoice = getComputerChoice();
+    console.log("You chose: ", URLSearchParamsserChoice);
+    console.log("The computer chose: ", computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
 }
 
