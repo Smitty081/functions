@@ -26,14 +26,41 @@
 //
 //console.log(neighbors[2][4]);//[list], [item in list]
 
-let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
-secretMessage.pop();
-secretMessage.push("to", "program");
-secretMessage.splice(7, 1, "right");
-secretMessage.shift();
-secretMessage.unshift("Programming");
-secretMessage.splice(6, 5, "know")
-console.log(secretMessage.join());
+// let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+// secretMessage.pop();
+// secretMessage.push("to", "program");
+// secretMessage.splice(7, 1, "right");
+// secretMessage.shift();
+// secretMessage.unshift("Programming");
+// secretMessage.splice(6, 5, "know")
+// console.log(secretMessage.join(' '));
+
+// Loops.
+
+var menu = ["Cheeseburger", "Fries", "Salad", "Steak", "Sushi", "Italian sausage", "Orzo", "Lemon"];
+
+for (let count = 0; count < menu.length; count += 1) {
+
+    console.log(menu[count]);
+}
+// Nested for loops
+// var soccerTeam = ["Alice", "Jose", "Jacob", "Kathy", "Fred", "Justin"];
+// var baseballTeam = ["Ted", "Sue", "Alice", "Randy", "Kathy", "Edgar"];
+// var onBothTeams = [];
+//
+// for (let i = 0; i < soccerTeam.length; i++) {
+// const soccerPlayer = soccerTeam[i];
+//
+// for (let j = 0; j < baseballTeam.length; j++) {
+// const baseballPlayer = baseballTeam[j];
+//
+// if (soccerPlayer === baseballPlayer) {
+// onBothTeams.push(soccerPlayer);
+// }
+// }
+// }
+
+// console.log(onBothTeams);
 
 
 
