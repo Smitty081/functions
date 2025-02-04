@@ -22,3 +22,4 @@ for (let i = 0; i < input.length; i++) {
 let resultString = resultArray.join(" ").toUpperCase();
 console.log(resultString);
 
+// wwww
