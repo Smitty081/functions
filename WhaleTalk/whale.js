@@ -1,4 +1,4 @@
-var input = ("It rubs the lotion on it's skin, or it gets the hose again!");
+var input = ("That rug really tied the room together");
 const vowels = ["a", "e", "i", "o", "u"];
 var resultArray = [];
 
