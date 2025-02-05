@@ -62,6 +62,67 @@ for (let count = 0; count < menu.length; count += 1) {
 
 // console.log(onBothTeams);
 
+// Array helper methods. forEach.
+
+// var numbers = [1, 2, 3, 4, 5];
+// 
+// Array.prototype.myForEach = function (callback) {
+// for (let i = 0; i < this.length; i++) {
+// let element = this[i];
+// 
+// callback(element);
+// }
+// };
+// 
+// numbers.myForEach(function (number) {
+// console.log(number);
+// });
+// map Example.
+var numbers = [2, 4, 6, 10];
+
+Array.prototype.myMap = function (callback) {
+    var returnArray = [];
+    for (var i = 0; i < this.length; i++) {
+        var element = this[i];
+
+        returnArray.push(callback(element));
+    }
+
+    return returnArray;
+};
+
+var timesTwo = numbers.myMap(function (num) {
+    return num * 2;
+});
+console.log(timesTwo);
+
+var budgets = [
+    { title: "Rent", amount: 1200 },
+    { title: "Groceries", amount: 300 },
+    { title: "Phone", amount: 50 },
+    { title: "Gas", amount: 200 },
+    { title: "Internet", amount: 45 },
+    { title: "Bourban", amount: 1000000 }
+];
+Array.prototype.myMap = function (callback) {
+    var budgetInfo = [];
+    for (var i = 0; i < this.length; i++) {
+        var element = this[i];
+
+        budgetInfo.push(callback(element));
+    }
+
+    return budgetInfo;
+};
+
+var budgetStrings = budgets.myMap(function (budget) {
+    return budget.title + " (" + budget.amount + ")";
+});
+
+console.log(budgetStrings.map(item => `"${item}"`).join(", "));
+
+
+
 
 
 
