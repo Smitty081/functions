@@ -38,3 +38,13 @@ const logInfo = () => {
 
 logInfo();
 console.log(betterWords.join(' '));
+
+var money = ["ones", "fives", "tens", "twenties", "fifties", "hundreds"];
+
+for (let i = 0; i < money.length; i++) {
+    const element = money[i];
+}
+console.log(money);
+
+var money = ["ones", "fives", "tens", "twenties", "fifties", "hundreds"]
+
